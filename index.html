@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Category</legend>
+            <fieldset>
+                <legend>Personal</legend>
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Juan" required pattern="{0,9}">
+                <label for="dateofbirth">Date Of Birth</label>
+                <input type="date" name="dateofbirht" id="dateofbirth" placeholder="dd/mm/yyyy" required>
+                <label for="animal"></label>
+                <input type="text" name="animal" id="animal" placeholder="Tiger" required pattern="{0,9}">
+
+
+            </fieldset>
+            <fieldset>
+                <legend>Account</legend>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" required>
+                <label for="password">password</label>
+                <input type="password" name="password" id="password" required pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}">
+                <label for="password">Confrim Password</label>
+                <input type="password" name="password" id="confrim_password" required pattern="(?=.*[a-z])(?=.*[A-Z]).{5,}">
+
+            </fieldset>
+            <fieldset>
+                <legend>Contact</legend>
+                <label for="adress">Adress</label>
+                <input type="text" name="adress" id="adress" required pattern="{0,50}">
+                <label for="city">City</label>
+                <input type="text" name="city" id="city" placeholder="Zacatecoluca" required pattern="{0,9}">
+                <label for="country">Country</label>
+                <input type="text" name="coutry" id="country" placeholder="Alemania" required pattern="{0,9}">
+                <label for="tel">Phone Number</label>
+                <input type="text" name="tel" id="tel" placeholder="77774444" required pattern="[0-9]{8}">
+            </fieldset>
+
+        </fieldset>
+        <input type="submit" value="Submit">
+
+
+
+
+
+    </form>
+</body>
+</html>
